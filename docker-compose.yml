@@ -1,0 +1,9 @@
+services:
+  webtop:
+    container_name: webtop_ubuntu_mate
+    restart: always
+    ports:
+      - 3000:3000
+    build:
+      context: "."
+      dockerfile: Dockerfile
